@@ -13,7 +13,7 @@ public class CastingSample {
 
 		char str2 = str.charAt(0);
 		int uni = str2;
-		System.out.println(str + " " + "is unicode: " + uni);
+		System.out.println(str  + " is unicode: " + uni);
 
 	}
 
