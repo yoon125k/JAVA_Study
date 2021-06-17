@@ -10,8 +10,8 @@ public class CastingSample {
 
 		System.out.print("문자 입력: ");
 		String str = sc.nextLine();
-
 		char str2 = str.charAt(0);
+		// char str2 = sc.next().charAt(0);
 		int uni = str2;
 		System.out.println(str  + " is unicode: " + uni);
 
