@@ -16,7 +16,7 @@ public class CastingSample {
 		for(int i=0; i<3; i++) {
 			cnt = cnt + 1;
 			if(cnt < 4) {
-				System.out.print("ÀÔ·Â : ");
+				System.out.print("ì ìˆ˜ : ");
 				double score = sc.nextDouble();
 				sum = (int)(sum + score);
 				
@@ -24,8 +24,8 @@ public class CastingSample {
 			avg = sum / cnt;
 			
 		}
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 		
 	}
 }
