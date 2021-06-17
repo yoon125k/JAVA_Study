@@ -5,6 +5,7 @@ public class Variable04 {
 		Variable04 va = new Variable04();
 		
 		va.printVarSize();
+		va.testOverflow();
 	}
 
 	//변수의 사이즈(크기) 출력용 메소드
@@ -20,6 +21,15 @@ public class Variable04 {
 		
 		System.out.println("char:" + Character.BYTES + "byte");
 		
+	}
+	
+	public void testOverflow() {
+		//byte bnum = 128;
+		
+		byte bnum = 127;
+		bnum = (byte)(bnum+1); // byte + int --> int
+		
+		System.out.println(("bnum:" + bnum));
 	}
 }
 
