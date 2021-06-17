@@ -6,11 +6,11 @@ public class Example {
 
 	public void example1(){
 		
-		Scanner sc1 = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("첫번쨰 정수: ");
-		int a = sc1.nextInt();
+		int a = sc.nextInt();
 		System.out.println("두번쨰 정수: ");
-		int b = sc1.nextInt();
+		int b = sc.nextInt();
 		
 		System.out.println("더하기 결과 : " + (a + b));
 		System.out.println("빼기 결과 : " + (a - b));
@@ -23,11 +23,11 @@ public class Example {
 	
 	public void example2(){
 		
-		Scanner sc2 = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("가로 : ");
-		double a = sc2.nextDouble();
+		double a = sc.nextDouble();
 		System.out.println("세로 : ");
-		double b = sc2.nextDouble();
+		double b = sc.nextDouble();
 		
 		System.out.println("면적 : " + (a * b));
 		System.out.println("둘레 : " + (a + b) * 2);
@@ -35,9 +35,9 @@ public class Example {
 	
 	 public void example3(){
 		 
-		 Scanner sc3 = new Scanner(System.in);
+		 Scanner sc = new Scanner(System.in);
 		 System.out.println("문자열을 입력하시오 : ");
-		 String str = sc3.nextLine();
+		 String str = sc.nextLine();
 		 
 		 char a = str.charAt(0);
 		 char b = str.charAt(1);
