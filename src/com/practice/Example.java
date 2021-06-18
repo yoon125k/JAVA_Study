@@ -3,6 +3,7 @@ package com.practice;
 import java.util.Scanner;
 
 public class Example {
+	
 	public void sample1() {
 
 		Scanner sc = new Scanner(System.in);
@@ -40,7 +41,7 @@ public class Example {
 		System.out.print("성적 :");
 		double score = sc.nextDouble();
 
-		System.out.printf("%d학년 %d반 %d번 %s학생은 성적이 %.2f이다.", grade, group, num, gender, score);
+		System.out.printf("%d학년 %d반 %d번 %s학생은 성적이 %.2f이다.%n", grade, group, num, gender, score);
 	}
 
 	public void sample3() {
