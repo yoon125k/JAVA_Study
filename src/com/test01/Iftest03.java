@@ -71,9 +71,9 @@ public class Iftest03 {
 					System.out.println("D+등급");
 				}else {
 				System.out.println("D등급");
-			}
-		} 
-			}else{
+				}
+			} 
+		}else{
 			System.out.println("F등급");
 		}
 	
