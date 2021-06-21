@@ -64,13 +64,13 @@ public class Iftest03 {
 				if (75 <= score) {
 					System.out.println("C+등급");
 				}else {
-				System.out.println("C등급");
+					System.out.println("C등급");
 				}
 			} else if (60 <= score && score < 70) {
 				if(65 <= score) {
 					System.out.println("D+등급");
 				}else {
-				System.out.println("D등급");
+					System.out.println("D등급");
 				}
 			} 
 		}else{
