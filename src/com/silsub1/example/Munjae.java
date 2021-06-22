@@ -126,23 +126,34 @@ Scanner sc = new Scanner(System.in);
 	public void test7() {
 		System.out.print("점수 입력: ");
 		int a = sc.nextInt();
+//		
+//		while (a < 0) {
+//			System.out.print("올바른 점수를 입력하세요: ");
+//			a = sc.nextInt();
+//		}
+		
+		
  		char c = ' ';
 
-		if (a > 60) {
-			if (a >= 90) {
-				c = 'A';
-			} else if (80 <= a && a < 90) {
-				c = 'B';
-			} else if (70 <= a && a < 80) {
-				c = 'C';
-			} else if (60 <= a && a < 70) {
-				c = 'D';
+ 		if( a>0) {
+			if (a > 60) {
+				if (a >= 90) {
+					c = 'A';
+				} else if (80 <= a && a < 90) {
+					c = 'B';
+				} else if (70 <= a && a < 80) {
+					c = 'C';
+				} else if (60 <= a && a < 70) {
+					c = 'D';
+				}
+			}else { 
+				c = 'F';
 			}
-		}else { 
-			c = 'F';
-		}
 //		System.out.println("점수: " + a);
 //		System.out.println("학점: " + c);
 		System.out.printf("점수는 %d 학점은 %c 이다.",a,c);
+ 		}else {
+ 		System.out.println("올바른 점수를 입력하세요.");
+ 		}
 	}
 }
