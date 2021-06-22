@@ -3,7 +3,8 @@ package com.silsub1.example;
 import java.util.Scanner;
 
 public class Munjae {
-	static Scanner sc = new Scanner(System.in);
+	
+Scanner sc = new Scanner(System.in);
 
 	public void test1() {
 
@@ -92,9 +93,11 @@ public class Munjae {
 	}
 
 	public void test5() {
-		System.out.print("이름 나이 키 입력: ");
+		System.out.print("이름: ");
 		String name = sc.nextLine();
+		System.out.print("나이: ");
 		int age = sc.nextInt();
+		System.out.print("키: ");
 		double height = sc.nextDouble();
 
 		if (name != null && name.length() > 0 && age > 0 && height > 0) {
