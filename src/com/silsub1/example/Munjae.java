@@ -3,8 +3,8 @@ package com.silsub1.example;
 import java.util.Scanner;
 
 public class Munjae {
-	
-Scanner sc = new Scanner(System.in);
+
+	Scanner sc = new Scanner(System.in);
 
 	public void test1() {
 
@@ -131,11 +131,10 @@ Scanner sc = new Scanner(System.in);
 //			System.out.print("올바른 점수를 입력하세요: ");
 //			a = sc.nextInt();
 //		}
-		
-		
- 		char c = ' ';
 
- 		if( a>0) {
+		char c = ' ';
+
+		if (a > 0) {
 			if (a > 60) {
 				if (a >= 90) {
 					c = 'A';
@@ -146,14 +145,12 @@ Scanner sc = new Scanner(System.in);
 				} else if (60 <= a && a < 70) {
 					c = 'D';
 				}
-			}else { 
+			} else {
 				c = 'F';
 			}
-//		System.out.println("점수: " + a);
-//		System.out.println("학점: " + c);
-		System.out.printf("점수는 %d 학점은 %c 이다.",a,c);
- 		}else {
- 		System.out.println("올바른 점수를 입력하세요.");
- 		}
+			System.out.printf("점수는 %d 학점은 %c 이다.", a, c);
+		} else {
+			System.out.println("올바른 점수를 입력하세요.");
+		}
 	}
 }
