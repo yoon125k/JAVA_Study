@@ -141,7 +141,8 @@ Scanner sc = new Scanner(System.in);
 		}else { 
 			c = 'F';
 		}
-		System.out.println("점수: " + a);
-		System.out.println("학점: " + c);
+//		System.out.println("점수: " + a);
+//		System.out.println("학점: " + c);
+		System.out.printf("점수는 %d 학점은 %c 이다.",a,c);
 	}
 }
