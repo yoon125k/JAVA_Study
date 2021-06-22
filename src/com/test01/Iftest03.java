@@ -78,5 +78,14 @@ public class Iftest03 {
 		}
 	
 	}
+	/*
+	 * String grade = "";
+	 * 
+	 * 	if (point >= 90){
+	 * 		grade = "A";
+	 * 		if (point>=95){
+	 * 			grade += "+";
+	 * }
+	 */
 }
 
