@@ -6,7 +6,8 @@ public class WhileTest02 {
 	public static void main(String[] args) {
 
 //		WhileTest02.test1();
-		WhileTest02.test2();
+//		WhileTest02.test2();
+		WhileTest02.test3();
 	}
 
 	public static void test1() {
@@ -34,4 +35,19 @@ public class WhileTest02 {
 		}while(!str.equals("exit")); 
 		System.out.println("종료");
 	}
+	
+	public static void test3() {
+		Scanner sc = new Scanner(System.in);
+		String str = null;
+		
+		do {
+			System.out.println("문자열 입력:");
+			str = sc.next();
+			if(str.equals("exit")) {
+				break;
+			}
+			System.out.println("str: "+ str);
+		} while(true);
+	}
+
 }
