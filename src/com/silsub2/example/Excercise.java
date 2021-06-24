@@ -16,7 +16,7 @@ public class Excercise {
 				if (j % 6 == 1) {
 					x += j;
 //				System.out.print("x: " + j);
-				} else if (4 < j && j % 4 == 1) {
+				} else if (j % 4 == 1) {
 					y += j;
 //					System.out.print("y:" + j);					
 				}
