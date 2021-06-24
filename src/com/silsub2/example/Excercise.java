@@ -8,7 +8,7 @@ public class Excercise {
 
 		int x = 0, y = 0;
 
-		// 1,13,25
+
 
 		for (int i = 0; i < 5; i++) {
 			for (int j = 1 + (5 * i); j <= 5 + (5 * i); j++) {
