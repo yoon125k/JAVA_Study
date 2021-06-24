@@ -6,10 +6,10 @@ public class ForTest02 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		ForTest02.test1s();
-//		ForTest02.test2();
+//		ForTest02.test1();
+		ForTest02.test2();
 //		ForTest02.test3();
-		ForTest02.test4();
+//		ForTest02.test4();
 	}
 
 	public static void test1() {
@@ -62,7 +62,6 @@ public class ForTest02 {
 
 			for (int c = 1; c <= col; c++) {
 				System.out.print('*');
-
 			}
 			System.out.println();
 		}
@@ -88,6 +87,5 @@ public class ForTest02 {
 			}
 			System.out.println();
 		}
-
 	}
 }
