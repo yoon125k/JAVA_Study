@@ -54,9 +54,15 @@ public class ForWhile {
 		char ch = sc.next().charAt(0); // p
 
 		int cnt = 0;
+		for (int i = 0; i < st.length(); i++) {
 
-		for (int i = 0; i <= st.length() - 1; i++) { // 5번
-			if (st.charAt(i) == ch) {
+			if (st.charAt(i) < 'A' || st.charAt(i) > 'z') {
+				System.out.println("영문자가 아닙니다");
+				return;
+			}
+		}
+		for (int j = 0; j <= st.length() - 1; j++) { // 5번
+			if (st.charAt(j) == ch) {
 				cnt += 1;
 			}
 		}
