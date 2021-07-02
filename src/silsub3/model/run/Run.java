@@ -9,9 +9,9 @@ public class Run {
 		Circle cr = new Circle();
 		
 		
-		cr.setRadius(15);
-		System.out.println("원의 둘레는: " + cr.getRadius());
-		System.out.println("원의 넓이는: " + cr.getRadius() * 2 * cr.getPi());
+		Circle.setRadius(15);
+		System.out.println("원의 둘레는: " + 2 * Circle.getRadius() * Circle.PI);
+		System.out.println("원의 넓이는: " + Circle.getRadius() * Circle.getRadius() * Circle.getPi());
 		
 		cr.incrementRadius();
 	}

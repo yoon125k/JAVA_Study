@@ -1,25 +1,25 @@
 package silsub4.model.vo;
 
 public class Student {
-	private int grade;
+	private static int grade;
 	private int classroom;
 	private String name;
 	private double height;
 	private char gender;
-	
+
 	{
-		this.grade = 90;
+		Student.grade = 90;
 		this.classroom = 5;
 		this.name = "김아무";
 		this.height = 178.99;
 		this.gender = 'M';
 	}
-	
+
 	public Student() {
 	}
 
-	public void setGrade(int grade) {
-		this.grade = grade;
+	public static void setGrade(int grade) {
+		Student.grade = grade;
 	}
 
 	public void setClassroom(int classroom) {
@@ -38,7 +38,7 @@ public class Student {
 		this.gender = gender;
 	}
 
-	public int getGrader() {
+	public static int getGrader() {
 		return grade;
 	}
 
@@ -57,9 +57,9 @@ public class Student {
 	public char getGender() {
 		return gender;
 	}
-	
-	public void information() {
-		System.out.println(grade + " , " + classroom + " , " + name + " , " + height + " , " + gender);
+
+	public String information() {
+		return grade + " , " + classroom + " , " + name + " , " + height + " , " + gender;
 	}
 
 }

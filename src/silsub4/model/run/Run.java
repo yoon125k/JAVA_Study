@@ -8,7 +8,8 @@ public class Run {
 		// TODO Auto-generated method stub
 		Student sd = new Student();
 		
-		sd.information();
+		System.out.println(sd.information());
+	
 		
 	}
 

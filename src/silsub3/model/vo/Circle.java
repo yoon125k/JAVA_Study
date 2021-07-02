@@ -2,7 +2,7 @@ package silsub3.model.vo;
 
 public class Circle {
 	public static final double PI = 3.14;
-	private int radius;
+	private static int radius;
 
 	public Circle() {
 		
@@ -12,17 +12,17 @@ public class Circle {
 		return PI;
 	}
 
-	public int getRadius() {
+	public static int getRadius() {
 		return radius;
 	}
 
-	public void setRadius(int radius) {
-		this.radius = radius;
+	public static void setRadius(int radius) {
+		Circle.radius = radius; // static 이기 떄문에
 	}
 	
 	public void incrementRadius() {
-		radius += 1;
-		System.out.println("원의 둘레는: " + radius);
-		System.out.println("원의 넓이는: " + radius * 2 * PI);
+		Circle.radius ++;
+		System.out.println("원의 둘레는: " + Circle.radius * 2 * PI);
+		System.out.println("원의 넓이는: " + Circle.radius * Circle.radius * PI);
 	}
 }
