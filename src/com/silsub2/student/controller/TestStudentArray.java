@@ -11,6 +11,11 @@ public class TestStudentArray {
 		int avg = 0;
 		char check;
 		int cnt = 0;
+		
+		int sumK =0;
+		int sumE =0;
+		int sumM =0;
+		
 		Scanner sc = new Scanner(System.in);
 
 		// 객체배열
@@ -43,6 +48,10 @@ public class TestStudentArray {
 				sum = kor + eng + math;
 				avg = sum / 3;
 				System.out.println(name + "의 평균은: " + avg);
+				
+				sumK += kor;
+				sumE += eng;
+				sumM += math;
 
 			} else if (check != 'y' || check != 'Y') {
 				System.out.println("종료");
@@ -52,6 +61,11 @@ public class TestStudentArray {
 
 		// 모든 정보 출력
 		if (cnt > 0) {
+			
+			System.out.println("총 국어평균: " + (sumK/cnt));
+			System.out.println("총 영어평균: " + (sumE/cnt));
+			System.out.println("총 수학평균: " + (sumM/cnt));
+
 			for (int i = 0; i < cnt; i++) {
 				System.out.println(objArr[i].information());
 			}
