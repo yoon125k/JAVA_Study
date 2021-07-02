@@ -19,13 +19,11 @@ public class TestStudentArray {
 
 		// 객체생성
 		do {
-			System.out.println("입력 학생수:" + cnt);
+			System.out.println("입력 학생수(최대 10명):" + cnt + "명");
 			System.out.print("추가하시겠습니까?(y,Y): ");
 			check = sc.next().charAt(0);
-
 			if (check == 'y' || check == 'Y') {
 				cnt++;
-
 				System.out.print("학년: ");
 				int gender = sc.nextInt();
 				System.out.print("반: ");
@@ -46,9 +44,6 @@ public class TestStudentArray {
 				avg = sum / 3;
 				System.out.println(name + "의 평균은: " + avg);
 
-			} else if (cnt > objArr.length) {
-				System.out.println("10명을 초과하였습니다.");
-				break;
 			} else if (check != 'y' || check != 'Y') {
 				System.out.println("종료");
 				break;
