@@ -73,4 +73,7 @@ public class Product {
 		this.date = date;
 	}
 
+	public String printInformation() {
+		return brand + "," + productNumber + "," + productCode + "," + productName + "," + price + "," + date;
+	}
 }
