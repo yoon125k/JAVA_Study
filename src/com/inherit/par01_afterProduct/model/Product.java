@@ -23,6 +23,8 @@ public class Product {
 		this.productName = productName;
 		this.price = price;
 		this.date = date;
+		
+		System.out.println("부모 Product 클래스 생성자 호출...");
 	}
 
 	public String getBrand() {

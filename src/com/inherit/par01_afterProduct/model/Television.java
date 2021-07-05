@@ -17,6 +17,8 @@ public class Television extends Product {
 		super(brand,productNumber,productCode,productName,price,date);
 		
 		this.inchType = inchType;
+		
+		System.out.println("Product 상속 받은 Television 클래스 생성자 호출...");
 	}
 
 	public int getInchType() {
