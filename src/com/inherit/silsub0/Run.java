@@ -9,6 +9,15 @@ public class Run {
 		c1.accelPedal();
 		c1.accelPedal();
 		System.out.println(c1);
+		
+		
+		System.out.println("------------");
+		Car c2 = new SUV("검은"); //다형성 , 부모클래스 타입으로 자식 클래스 객체생성
+		c2.accelPedal();
+		System.out.println(c2);
+		c2.accelPedal();
+		c2.accelPedal();
+		System.out.println(c2);
 	}
 
 }
