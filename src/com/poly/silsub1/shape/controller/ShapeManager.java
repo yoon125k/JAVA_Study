@@ -38,8 +38,13 @@ public class ShapeManager {
 			System.out.printf("넓이는 %.2f \n", iarr[i].area());
 			System.out.printf("둘레는 %.2f \n", iarr[i].perimeter());
 
-			if (i > 1) {
-				System.out.printf("삼각형의 빗변은 %.2f \n", iarr[i].getHypotenuse());
+//			if (i > 1) {
+//				System.out.printf("삼각형의 빗변은 %.2f \n", iarr[i].getHypotenuse());
+//			}
+			
+			if (iarr[i] instanceof Triangle) {
+				System.out.printf("삼각형의 빗변은 %.2f \n",((Triangle)iarr[i]).getHypotenuse());
+//				System.out.println(((Triangle)iarr[i]).getHypotenuse());
 			}
 		}
 

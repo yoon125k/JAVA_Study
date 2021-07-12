@@ -12,6 +12,22 @@ public class Triangle implements IShape{
 		this.height = height;
 	}
 	
+	public double getBase() {
+		return base;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public void setBase(double base) {
+		this.base = base;
+	}
+
+	public void setHeight(double height) {
+		this.height = height;
+	}
+
 	public double getHypotenuse() {
 		return Math.sqrt((base*base)+(height+height));
 	}

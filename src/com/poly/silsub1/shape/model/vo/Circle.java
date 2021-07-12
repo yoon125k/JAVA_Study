@@ -2,8 +2,8 @@ package com.poly.silsub1.shape.model.vo;
 
 public class Circle extends Shape implements IShape{
 	
-	final double PI = Math.PI;
-	double radius;
+	public static final double PI = Math.PI;
+	private double radius;
 	
 	public Circle() {}
 	
@@ -12,7 +12,7 @@ public class Circle extends Shape implements IShape{
 		this.radius = radius;
 	}
 
-	public double getPI() {
+	public static double getPI() {
 		return PI;
 	}
 
@@ -32,7 +32,7 @@ public class Circle extends Shape implements IShape{
 	@Override
 	public double perimeter() {
 		
-		return radius * PI;
+		return (2*radius) * PI;
 	}
 
 	@Override
