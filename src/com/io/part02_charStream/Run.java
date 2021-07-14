@@ -5,7 +5,8 @@ public class Run {
 	public static void main(String[] args) {
 		
 		TestCharStream cs = new TestCharStream();
-		cs.fileSave();
+//		cs.fileSave();
+		cs.fileOpen();
 	}
 
 }
